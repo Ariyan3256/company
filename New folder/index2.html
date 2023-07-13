@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <style>
+        body{
+            background-color: black;
+        }
+        .heading{
+            padding-left:16px;
+        }
+        #main{
+            align-items: center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border-radius: 7.5%;
+            font-size: 87.94%;
+        }
+        #list{
+            list-style-image: url(icon-list.svg);
+            padding-left:2.6rem;
+        }
+        #text{
+            padding:5px;
+        }
+        #mail{
+            padding-left:1rem;
+        }
+        #image{
+            right:0rem;
+        }
+        .con{
+            padding-left: 1.0rem;
+        }
+        .textbox{
+            border-radius: 10%;
+            width:85%;
+            height: 3rem;
+            position:relative;
+            top:0;
+            left:50%;
+            transform: translate(-50.65%);
+        }
+        ::placeholder{
+            padding: 1.5em;
+        }
+        #subscribe_btn{
+            border: 0.075em solid hsl(234,29%,20%);
+            background-color: hsl(234,29%,20%);
+            border-radius:10%;
+            width:101%;
+            height:3rem;
+            color: hsl(0,0%,100%);
+            cursor: pointer;
+        }
+        #subscribe_btn:hover{
+            background:linear-gradient(to right,rgb(214, 15, 124),rgb(249, 77, 29));
+        }
+        #err_msg{
+            float: right;
+            color: hsl(4, 100%, 67%);
+        }
+    </style>
+    <script src="module1.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div class="parent">
+            <div id="image">
+                <img src="illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+            </div>
+            <div id ="text">
+                <div class="heading">
+                    <h1>Stay Updated!</h1>
+                </div>
+                <p class="con">Join 60,0000+ product managers receiving</p>
+                <p class="con">monthly updates on:</p>
+                <ol id="list">
+                    <li>
+                        Product discovery and building what matters
+                    </li>
+                    <li>
+                        Measuring to ensure updates are a success
+                    </li>
+                    <li>
+                        And much more!
+                    </li>
+                </ol>
+                <br>
+                <span class="content" id="mail">Email address</span>
+                <span id="err_msg"></span>
+                <br><br>
+                <div class="flex">
+                    <form action="thanks2.html" method="get">
+                        <input type="email" name="mail45" class="textbox" id="textbox" placeholder="email@company.com" onkeyup="validateEmail()">
+                        <br><br>
+                        <div class="textbox">
+                            <button type="submit" id="subscribe_btn">Subscribe to monthly newsletter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

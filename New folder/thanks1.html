@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: 'Roboto';
+            font-style: bold;
+            font-weight:700;
+        }
+        body{
+            background-color: hsl(235, 18%, 26%);
+        }
+        #main{
+            align-items: center;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%) scale(1.05,0.90);
+            background-color: white;
+            padding: 40px;
+            border-radius: 7.5%;
+            font-size: 87.94%;
+        }
+        #close_btn{
+            border: 0.075em solid hsl(234,29%,20%);
+            background-color: hsl(234,29%,20%);
+            border-radius:10%;
+            width:100%;
+            height:3rem;
+            color: hsl(0,0%,100%);
+            cursor: pointer;
+        }
+        #close_btn:hover{
+            background:linear-gradient(to right,rgb(214, 15, 124),rgb(249, 77, 29));
+            /*linear-gradient(to right,rgb(255,255,255),rgb(0,0,0))*/
+        }
+        #fill_mail{
+            font-family: 'Roboto';
+            font-style: regular;
+
+        }
+    </style>
+    <script src="module2.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div id="img">
+            <img src="icon-success.svg" alt="icon-success">
+        </div>
+        <div id="box">
+            <h1>
+                <span>Thanks for</span>
+                <br>
+                <span>subscribing!</span>
+            </h1>
+            <p>A confirmation email has been sent to</p>
+            <p>
+                <span id="fill_mail"></span>
+                <span>. Please open it and click</span>
+            </p>
+            <p>the button inside to confirm your subscription</p>
+            <br>
+            <button type="submit" id="close_btn">Dismiss Message</button>
+        </div>
+    </div>
+</body>
+</html>
